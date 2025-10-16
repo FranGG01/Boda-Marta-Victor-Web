@@ -1,41 +1,16 @@
-# 💍 Web de Boda – Marta & Victor
+# React + Vite
 
-Bienvenidos a la página web de una boda ❤️  
-Aquí los invitados podrán encontrar toda la información del evento, confirmar su asistencia y estar al tanto de los detalles más importantes del gran día.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## 🕊️ Tecnologías utilizadas
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- [React](https://react.dev/) – Librería para construir la interfaz.
-- [Vite](https://vitejs.dev/) – Entorno rápido de desarrollo.
-- [TailwindCSS](https://tailwindcss.com/) – Framework CSS para un diseño limpio y moderno.
-- [Google Sheets](https://www.google.com/sheets/about/) – Para almacenar las respuestas del formulario RSVP.
+## React Compiler
 
----
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## 🧭 Estructura del proyecto
+## Expanding the ESLint configuration
 
-Boda-Marta-Victor-Web/
-├─ public/
-│ ├─ favicon.ico
-│ └─ images/ # Fotos e iconos
-├─ src/
-│ ├─ components/ # Componentes React (Header, Formulario, etc.)
-│ ├─ pages/ # Secciones principales (Inicio, Información, RSVP)
-│ ├─ App.jsx
-│ ├─ main.jsx
-│ ├─ index.css
-│ └─ assets/ # Logos o fondos
-├─ package.json
-├─ tailwind.config.js
-└─ README.md
-
----
-
-## ⚙️ Instalación y uso
-
-1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/FranGG01/Boda-Marta-Victor-Web.git
-   cd Boda-Marta-Victor-Web
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
