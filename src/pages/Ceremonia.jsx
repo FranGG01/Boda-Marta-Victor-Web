@@ -1,5 +1,5 @@
 import Footer from "../components/Footer";
-
+import MapEmbed from "../components/MapEmbed";
 const VENUE = {
   nombre: "Iglesia Colegio Nuestra Señora del Pilar",
   direccion: "Calle Príncipe de Vergara, 41, 28001 Madrid",
@@ -14,7 +14,6 @@ const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIC
 export default function Ceremonia() {
   return (
     <main className="bg-[#fdfaf6] text-[#2b2b2b] font-[Playfair_Display]">
-{/* Banda floral superior */}
 <section className="relative w-full bg-[#fdfaf6] overflow-hidden">
   <img
     src="/images/bgceremonia.jpg"
@@ -25,9 +24,6 @@ export default function Ceremonia() {
 </section>
 
 
-
-
-      {/* Contenido */}
       <section className="px-6 py-14">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-semibold mb-6">Ceremonia</h1>
@@ -43,7 +39,6 @@ export default function Ceremonia() {
             los siguientes parkings cercanos:
           </p>
 
-          {/* Parkings */}
           <div className="space-y-8 text-base">
             <div>
               <h3 className="text-xl font-semibold mb-1">Parking Público El Pilar</h3>
@@ -55,10 +50,8 @@ export default function Ceremonia() {
             </div>
           </div>
 
-          {/* Separador sutil */}
           <div className="mx-auto my-12 h-px w-40 bg-[#2b2b2b]/20" />
 
-          {/* Tarjeta dirección + botón ruta */}
           <div className="mx-auto max-w-xl grid grid-cols-1 md:grid-cols-[1fr_auto] items-center gap-6">
             <div>
               <h4 className="text-2xl font-semibold leading-tight">
@@ -73,7 +66,6 @@ export default function Ceremonia() {
               rel="noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-white/0 bg-[#fdfaf6] px-6 py-3 text-white tracking-wider uppercase text-sm "
             >
-              {/* iconito señalización */}
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                 <path d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7z" stroke="currentColor" strokeWidth="1.5" />
               </svg>
@@ -81,16 +73,10 @@ export default function Ceremonia() {
             </a>
           </div>
         </div>
-        <div className="mt-8 aspect-[16/9] w-full overflow-hidden rounded-2xl border border-[#2b2b2b]/10">
-  <iframe
-    title="Mapa ceremonia"
-    src={`https://www.google.com/maps?q=${encodeURIComponent(VENUE.direccion)}&output=embed`}
-    className="h-full w-full"
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  />
-</div>
 
+
+
+<MapEmbed address={VENUE.direccion} title="Mapa ceremonia" />
       </section>
       
       <Footer />
