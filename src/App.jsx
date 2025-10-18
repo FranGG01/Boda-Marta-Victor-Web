@@ -1,5 +1,4 @@
-import { Routes, Route, Navigate, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Ceremonia from "./pages/Ceremonia";
@@ -8,18 +7,11 @@ import Asistencia from "./pages/Asistencia";
 import Buses from "./pages/Buses";
 import Lista from "./pages/Lista";
 
-function ScrollToTop() {
-  const { pathname } = useLocation();
-  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
-  return null;
-}
-
 export default function App() {
   return (
     <>
-      <ScrollToTop />
       <Navbar />
-      <div className="h-[96px]" /> {/* separador por navbar fijo (ajusta si cambias alturas) */}
+      <div style={{ height: "var(--nav-h, 120px)" }} />
 
       <Routes>
         <Route path="/" element={<Home />} />
