@@ -15,7 +15,6 @@ export default function Finca() {
   return (
     <main className="bg-[#fdfaf6] text-[#2b2b2b] font-[Playfair_Display]">
       
-      {/* Imagen floral superior */}
       <section className="relative w-full bg-[#fdfaf6] overflow-hidden">
         <img
           src="/images/bgceremonia.jpg" 
@@ -25,7 +24,6 @@ export default function Finca() {
         <div className="absolute bottom-0 left-0 w-full h-8 bg-gradient-to-t from-[#fdfaf6] to-transparent" />
       </section>
 
-      {/* Contenido */}
       <section className="px-6 py-14">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-semibold mb-6">Finca</h1>
@@ -41,7 +39,6 @@ export default function Finca() {
             día con familiares y amigos.
           </p>
 
-          {/* Dirección y botón */}
           <div className="mx-auto max-w-xl grid grid-cols-1 md:grid-cols-[1fr_auto] items-center gap-6">
             <div>
               <h4 className="text-2xl font-semibold leading-tight">
