@@ -6,7 +6,7 @@ const PHONES = {
 };
 
 const FORM_URL_EMBED = "https://docs.google.com/forms/d/e/1FAIpQLSc7Fs2Xlt78lCGuQ2limzMul6J987gyC6ZYTNHZggNvXoC6jQ/viewform?embedded=true";
-const FORM_URL_OPEN  = "https://docs.google.com/forms/d/e/1FAIpQLSc7Fs2Xlt78lCGuQ2limzMul6J987gyC6ZYTNHZggNvXoC6jQ/viewform";
+const FORM_URL_OPEN = "https://docs.google.com/forms/d/e/1FAIpQLSc7Fs2Xlt78lCGuQ2limzMul6J987gyC6ZYTNHZggNvXoC6jQ/viewform";
 
 export default function Asistencia() {
   return (
@@ -28,8 +28,8 @@ export default function Asistencia() {
 
           <p className="text-lg leading-relaxed mb-4">
             Para facilitar la organización, os pedimos que nos ayudéis rellenando el siguiente formulario.
-           <strong> Dentro podrás indicar si usarás autobús (ida, vuelta o ambos). </strong>  
-             Os dejamos nuestros números de teléfono. Si os surge cualquier duda, ¡estaremos encantados de resolverlas! 
+            <strong> Dentro podrás indicar si usarás autobús (ida, vuelta o ambos). </strong>
+            Os dejamos nuestros números de teléfono. Si os surge cualquier duda, ¡estaremos encantados de resolverlas!
           </p>
 
           <div className="mx-auto flex flex-col gap-2 items-center text-lg">
@@ -43,16 +43,7 @@ export default function Asistencia() {
 
           <div className="mx-auto my-10 h-px w-40 bg-[#2b2b2b]/20" />
 
-          <div className="mb-6">
-            <a
-              href={FORM_URL_OPEN}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-[#7c1c26] px-6 py-3 !text-white tracking-wider uppercase text-sm hover:brightness-110 transition"
-            >
-              Rellenar formulario ↗
-            </a>
-          </div>
+
 
           <div id="form-asistencia" className="flex justify-center">
             <div className="w-[95%] md:w-[80%] lg:w-[70%] rounded-2xl overflow-hidden border border-[#e6d7d0] shadow-md bg-white/70">
@@ -61,7 +52,7 @@ export default function Asistencia() {
                 src={FORM_URL_EMBED}
                 width="100%"
                 height="1200"
-          
+
                 className="block"
               >
                 Cargando…
