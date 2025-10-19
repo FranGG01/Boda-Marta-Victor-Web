@@ -56,8 +56,8 @@ export default function Navbar() {
             <NavLink to="/" end className={({isActive}) => `${linkBase} ${isActive ? active : ""}`}>¡Bienvenidos!</NavLink>
             <NavLink to="/ceremonia" className={({isActive}) => `${linkBase} ${isActive ? active : ""}`}>Ceremonia</NavLink>
             <NavLink to="/finca" className={({isActive}) => `${linkBase} ${isActive ? active : ""}`}>Finca</NavLink>
-            <NavLink to="/asistencia" className={({isActive}) => `${linkBase} ${isActive ? active : ""}`}>Asistencia</NavLink>
             <NavLink to="/buses" className={({isActive}) => `${linkBase} ${isActive ? active : ""}`}>Buses</NavLink>
+            <NavLink to="/asistencia" className={({isActive}) => `${linkBase} ${isActive ? active : ""}`}>Asistencia</NavLink>
             <NavLink to="/lista" className={({isActive}) => `${linkBase} ${isActive ? active : ""}`}>Lista de bodas</NavLink>
           </div>
         </nav>
@@ -95,10 +95,10 @@ export default function Navbar() {
                   className={({isActive}) => `${linkBase} ${isActive ? active : ""}`}>Ceremonia</NavLink>
                 <NavLink to="/finca" onClick={() => setOpen(false)}
                   className={({isActive}) => `${linkBase} ${isActive ? active : ""}`}>Finca</NavLink>
+                  <NavLink to="/buses" onClick={() => setOpen(false)}
+                  className={({isActive}) => `${linkBase} ${isActive ? active : ""}`}>Buses</NavLink>
                 <NavLink to="/asistencia" onClick={() => setOpen(false)}
                   className={({isActive}) => `${linkBase} ${isActive ? active : ""}`}>Asistencia</NavLink>
-                <NavLink to="/buses" onClick={() => setOpen(false)}
-                  className={({isActive}) => `${linkBase} ${isActive ? active : ""}`}>Buses</NavLink>
                 <NavLink to="/lista" onClick={() => setOpen(false)}
                   className={({isActive}) => `${linkBase} ${isActive ? active : ""}`}>Lista de bodas</NavLink>
               </div>
