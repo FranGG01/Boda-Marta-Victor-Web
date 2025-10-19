@@ -6,10 +6,12 @@ import Finca from "./pages/Finca";
 import Asistencia from "./pages/Asistencia";
 import Buses from "./pages/Buses";
 import Lista from "./pages/Lista";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
     <>
+      <ScrollToTop />
       <Navbar />
       <div style={{ height: "var(--nav-h, 120px)" }} />
 

@@ -6,7 +6,7 @@ const FORM_URL_OPEN = "https://docs.google.com/forms/d/e/1FAIpQLSc7Fs2Xlt78lCGuQ
 export default function Buses() {
   return (
     <main className="bg-gradient-to-b from-[#fdfaf6] via-[#faf7f2] to-[#fdfaf6] text-[#2b2b2b] font-[Playfair_Display]">
-      {/* Cabecera floral mejorada */}
+
       <section className="relative w-full overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#fdfaf6]/60 z-10" />
         <img
@@ -16,20 +16,16 @@ export default function Buses() {
         />
         <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-[#fdfaf6] to-transparent z-20" />
 
-        {/* Título superpuesto */}
         <div className="absolute inset-0 flex items-center justify-center z-30">
-          <h1 className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg tracking-wide">
-            Transporte
-          </h1>
+
         </div>
       </section>
 
       <section className="px-6 py-16 md:py-20">
         <div className="max-w-4xl mx-auto">
 
-          {/* Tarjetas de horarios */}
           <div className="grid md:grid-cols-2 gap-6 mb-12">
-            {/* Tarjeta Ida */}
+
             <div className="bg-white rounded-2xl shadow-lg p-8 border border-[#e8dcc8] hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center justify-center mb-4">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#d4af77] to-[#c4984f] rounded-full flex items-center justify-center">
@@ -48,7 +44,6 @@ export default function Buses() {
               </div>
             </div>
 
-            {/* Tarjeta Vuelta */}
             <div className="bg-white rounded-2xl shadow-lg p-8 border border-[#e8dcc8] hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center justify-center mb-4">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#8b7355] to-[#6b5945] rounded-full flex items-center justify-center">
@@ -68,7 +63,6 @@ export default function Buses() {
             </div>
           </div>
 
-          {/* Nota importante */}
           <div className="bg-gradient-to-r from-[#f5ebe0] to-[#f0e6d8] rounded-2xl p-8 shadow-md border-l-4 border-[#c4984f]">
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
